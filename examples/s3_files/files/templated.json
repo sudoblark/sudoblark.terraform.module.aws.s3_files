@@ -1,0 +1,9 @@
+{
+  "name": "templated.json",
+  "description": "I'm a file that uses terraform templating syntax to dynamically do things.",
+  "examples": {
+    "string": ${string_input},
+    "number": ${number_input},
+    "list": ${list_input}
+  }
+}
