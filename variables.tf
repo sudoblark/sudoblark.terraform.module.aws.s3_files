@@ -24,7 +24,7 @@ REQUIRED
 ---------
 - name:                 : Friendly name used through Terraform for instantiation and cross-referencing of resources,
                           only relates to resource naming within the module.
-- source_folder         : Which folder under "application" where the {source_file} lives.
+- source_folder         : Which folder where the {source_file} lives.
 - source_file           : The path under {source_folder} corresponding to the file to upload.
 - destination_key       : Key in S3 bucket to upload to.
 - destination_bucket    : The S3 bucket to upload the {source_file} to.
