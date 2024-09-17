@@ -69,8 +69,6 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_application_name"></a> [application\_name](#input\_application\_name) | Name of the application utilising resource. | `string` | n/a | yes |
-| <a name="input_environment"></a> [environment](#input\_environment) | Which environment this is being instantiated in. | `string` | n/a | yes |
 | <a name="input_raw_s3_files"></a> [raw\_s3\_files](#input\_raw\_s3\_files) | Data structure<br>---------------<br>A list of dictionaries, where each dictionary has the following attributes:<br><br>REQUIRED<br>---------<br>- name:                 : Friendly name used through Terraform for instantiation and cross-referencing of resources,<br>                          only relates to resource naming within the module.<br>- source\_folder         : Which folder where the {source\_file} lives.<br>- source\_file           : The path under {source\_folder} corresponding to the file to upload.<br>- destination\_key       : Key in S3 bucket to upload to.<br>- destination\_bucket    : The S3 bucket to upload the {source\_file} to.<br><br>OPTIONAL<br>---------<br>- template\_input        : A dictionary of variable input for the template file needed for instantiation (leave blank if no template required) | <pre>list(<br>    object({<br>      name               = string,<br>      source_folder      = string,<br>      source_file        = string,<br>      destination_key    = string,<br>      destination_bucket = string,<br>      template_input     = optional(map(string), {})<br>    })<br>  )</pre> | n/a | yes |
 
 ## Outputs
